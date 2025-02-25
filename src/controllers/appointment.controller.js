@@ -22,12 +22,12 @@ export const getAppointmentById = async (req, res) => {
 };
 
 export const createAppointment = async (req, res) => {
-   console.log(req.body);
-  const { appointmentData } = req.body;
+   // console.log(req.body);
+  // const { appointmentData } = req.body;
   // console.log(appointmentData);
 
-  const { id, date, duration, appointmentType, patientName, notes } =
-    appointmentData;
+  const { id, date, duration, appointmentType, patientName, notes } =req.body
+    
   // console.log(typeof date);
 
   try {
