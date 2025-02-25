@@ -22,7 +22,7 @@ export const getAppointmentById = async (req, res) => {
 };
 
 export const createAppointment = async (req, res) => {
-  // console.log(req.body);
+   console.log(req.body);
   const { appointmentData } = req.body;
   // console.log(appointmentData);
 
